@@ -1,0 +1,60 @@
+/* * {
+
+  box-sizing:content-box;
+} */
+
+:focus {
+  outline-offset: 2px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgb(255, 183, 0), rgb(255, 102, 0));
+}
+
+input {
+ width: 200px;
+}
+
+.search-container {
+ width: 50%;
+ width: 200px;
+ margin-top: 50vh;
+ margin-bottom: 50vh;
+}
+/* used chatGPT to get vh for the margin unit.  */
+
+/* .search-container input,
+.search-container .suggestions {
+ 
+} */
+
+.search-container input {
+  background-color: rgba(255, 180, 67,.7);
+  border-bottom: red solid 2px;
+}
+
+/* .search-container .suggestions {
+  
+} */
+
+ul {
+  list-style-type: none;
+  padding: 3px;
+  width: 200px;
+  margin: 0;
+}
+
+ ul li span.has-suggestions {
+  font-weight: bold;
+}
+
+ul li {
+  background-color: rgba(255, 180, 67,.7);
+}
+
+ul li:hover {
+  background-color: rgb(255, 102, 0);
+}
+
